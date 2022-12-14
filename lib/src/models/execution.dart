@@ -9,7 +9,7 @@ class Execution implements Model {
     /// Execution upate date in ISO 8601 format.
     final String $updatedAt;
     /// Execution roles.
-    final List $permissions;
+    // final List $permissions;
     /// Function ID.
     final String functionId;
     /// The trigger that caused the function to execute. Possible values can be: `http`, `schedule`, or `event`.
@@ -31,7 +31,7 @@ class Execution implements Model {
         required this.$id,
         required this.$createdAt,
         required this.$updatedAt,
-        required this.$permissions,
+        // required this.$permissions,
         required this.functionId,
         required this.trigger,
         required this.status,
@@ -47,7 +47,7 @@ class Execution implements Model {
             $id: map['\$id'].toString(),
             $createdAt: map['\$createdAt'].toString(),
             $updatedAt: map['\$updatedAt'].toString(),
-            $permissions: map['\$permissions'],
+            // $permissions: map['\$permissions'],
             functionId: map['functionId'].toString(),
             trigger: map['trigger'].toString(),
             status: map['status'].toString(),
@@ -64,7 +64,7 @@ class Execution implements Model {
             "\$id": $id,
             "\$createdAt": $createdAt,
             "\$updatedAt": $updatedAt,
-            "\$permissions": $permissions,
+            // "\$permissions": $permissions,
             "functionId": functionId,
             "trigger": trigger,
             "status": status,

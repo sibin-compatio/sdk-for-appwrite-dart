@@ -11,7 +11,7 @@ class File implements Model {
     /// File update date in ISO 8601 format.
     final String $updatedAt;
     /// File permissions. [Learn more about permissions](/docs/permissions).
-    final List $permissions;
+    // final List $permissions;
     /// File name.
     final String name;
     /// File MD5 signature.
@@ -30,7 +30,7 @@ class File implements Model {
         required this.bucketId,
         required this.$createdAt,
         required this.$updatedAt,
-        required this.$permissions,
+        // required this.$permissions,
         required this.name,
         required this.signature,
         required this.mimeType,
@@ -45,7 +45,7 @@ class File implements Model {
             bucketId: map['bucketId'].toString(),
             $createdAt: map['\$createdAt'].toString(),
             $updatedAt: map['\$updatedAt'].toString(),
-            $permissions: map['\$permissions'],
+            // $permissions: map['\$permissions'],
             name: map['name'].toString(),
             signature: map['signature'].toString(),
             mimeType: map['mimeType'].toString(),
@@ -61,7 +61,7 @@ class File implements Model {
             "bucketId": bucketId,
             "\$createdAt": $createdAt,
             "\$updatedAt": $updatedAt,
-            "\$permissions": $permissions,
+            // "\$permissions": $permissions,
             "name": name,
             "signature": signature,
             "mimeType": mimeType,

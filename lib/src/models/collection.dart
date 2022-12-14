@@ -9,7 +9,7 @@ class Collection implements Model {
     /// Collection update date in ISO 8601 format.
     final String $updatedAt;
     /// Collection permissions. [Learn more about permissions](/docs/permissions).
-    final List $permissions;
+    // final List $permissions;
     /// Database ID.
     final String databaseId;
     /// Collection name.
@@ -27,7 +27,7 @@ class Collection implements Model {
         required this.$id,
         required this.$createdAt,
         required this.$updatedAt,
-        required this.$permissions,
+        // required this.$permissions,
         required this.databaseId,
         required this.name,
         required this.enabled,
@@ -41,7 +41,7 @@ class Collection implements Model {
             $id: map['\$id'].toString(),
             $createdAt: map['\$createdAt'].toString(),
             $updatedAt: map['\$updatedAt'].toString(),
-            $permissions: map['\$permissions'],
+            // $permissions: map['\$permissions'],
             databaseId: map['databaseId'].toString(),
             name: map['name'].toString(),
             enabled: map['enabled'],
@@ -56,7 +56,7 @@ class Collection implements Model {
             "\$id": $id,
             "\$createdAt": $createdAt,
             "\$updatedAt": $updatedAt,
-            "\$permissions": $permissions,
+            // "\$permissions": $permissions,
             "databaseId": databaseId,
             "name": name,
             "enabled": enabled,

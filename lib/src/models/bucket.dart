@@ -9,7 +9,7 @@ class Bucket implements Model {
     /// Bucket update date in ISO 8601 format.
     final String $updatedAt;
     /// Bucket permissions. [Learn more about permissions](/docs/permissions).
-    final List $permissions;
+    // final List $permissions;
     /// Whether file-level security is enabled. [Learn more about permissions](/docs/permissions).
     final bool fileSecurity;
     /// Bucket name.
@@ -31,7 +31,7 @@ class Bucket implements Model {
         required this.$id,
         required this.$createdAt,
         required this.$updatedAt,
-        required this.$permissions,
+        // required this.$permissions,
         required this.fileSecurity,
         required this.name,
         required this.enabled,
@@ -47,7 +47,7 @@ class Bucket implements Model {
             $id: map['\$id'].toString(),
             $createdAt: map['\$createdAt'].toString(),
             $updatedAt: map['\$updatedAt'].toString(),
-            $permissions: map['\$permissions'],
+            // $permissions: map['\$permissions'],
             fileSecurity: map['fileSecurity'],
             name: map['name'].toString(),
             enabled: map['enabled'],
@@ -64,7 +64,7 @@ class Bucket implements Model {
             "\$id": $id,
             "\$createdAt": $createdAt,
             "\$updatedAt": $updatedAt,
-            "\$permissions": $permissions,
+            // "\$permissions": $permissions,
             "fileSecurity": fileSecurity,
             "name": name,
             "enabled": enabled,

@@ -13,7 +13,7 @@ class Document implements Model {
     /// Document update date in ISO 8601 format.
     final String $updatedAt;
     /// Document permissions. [Learn more about permissions](/docs/permissions).
-    final List $permissions;
+    // final List $permissions;
     final Map<String, dynamic> data;
 
     Document({
@@ -22,7 +22,7 @@ class Document implements Model {
         required this.$databaseId,
         required this.$createdAt,
         required this.$updatedAt,
-        required this.$permissions,
+        // required this.$permissions,
         required this.data,
     });
 
@@ -33,7 +33,7 @@ class Document implements Model {
             $databaseId: map['\$databaseId'].toString(),
             $createdAt: map['\$createdAt'].toString(),
             $updatedAt: map['\$updatedAt'].toString(),
-            $permissions: map['\$permissions'],
+            // $permissions: map['\$permissions'],
             data: map,
         );
     }
@@ -45,7 +45,7 @@ class Document implements Model {
             "\$databaseId": $databaseId,
             "\$createdAt": $createdAt,
             "\$updatedAt": $updatedAt,
-            "\$permissions": $permissions,
+            // "\$permissions": $permissions,
             "data": data,
         };
     }
